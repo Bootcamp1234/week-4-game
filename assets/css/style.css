@@ -1,5 +1,5 @@
-.container{
-    background-image: url(assets/images/background.jpg);
+.backgroundimage{
+    background-image: url(../images/background.jpg);
 }
 
 .header{
