@@ -7,14 +7,17 @@
 font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
+h2{
+    font-size: 60px;
+}
 
 .instruction{
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
-    color: brown;
+    color: white;
 }
 #wellwish{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: blue;
+    color: white;
 }
 
 .characterSize {
