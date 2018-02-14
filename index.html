@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Star Wars Collector</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+    </style>
+</head>
+
+
+<body>
+    <div class="container backgroundimage">
+        <div class="row instruction">
+            <div class="row character">
+
+                <div class="header">
+                    <h2>Star Wars Collector</h2>
+                </div>
+                <div class="instruction">
+                    <h4>How to play the game</h4>
+                    <br>
+                    <p>You will be given a number at the beginning of the game. There are four characters below.</p>
+                    <ol>
+                        <li>The value of each character is hidden within the image. The value changes each time you restart the
+                            game.</li>
+                        <li>Your goal is to match your total number to the number listed.</li>
+                    </ol>
+                    <br>
+                    <p id="wellwish">May the Force be with you!</p>
+                </div>
+            </div>
+            <h1 id="numGuess"></h1>
+            <h3 id="myNum"></h3>
+            <div id="character"></div>
+
+            <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+            <script>
+                var total = 0
+                var randNum = Math.floor(Math.random() * 100)
+                $("#numGuess").text("Click the Characters to Match the Number : " + randNum)
+                for (var i = 0; i < 1; i++) {
+                    var myImage = $("<img>")
+                    myImage.attr("src", "./assets/images/anakin.jpg")
+                    myImage.attr("class", "characterSize myCharacter")
+                    myImage.attr("data-characterValue", Math.floor(Math.random() * 20))
+                    $("#character").append(myImage)
+                }
+
+                $(".myCharacter").on("click", function () {
+                    var characterNum = parseInt($(this).attr("data-characterValue"))
+                    total += characterNum
+                    $("#myNum").text(total)
+                    // if (total === randNum) {
+                    //     alert("win")
+                    // }
+                    // else if (total > randNum) {
+                    //     alert("lose")
+                    // }
+                    // else {
+                    //     return
+                    // }
+                })
+                // var total = 0
+                // var randNum = Math.floor(Math.random() * 100)
+                // $("#numGuess").text("Click the Characters to Match the Number : " + randNum)
+                for (var i = 0; i < 1; i++) {
+                    var myImage = $("<img>")
+                    myImage.attr("src", "./assets/images/Ahsoka.png")
+                    myImage.attr("class", "characterSize myCharacter")
+                    myImage.attr("data-characterValue", Math.floor(Math.random() * 20))
+                    $("#character").append(myImage)
+                }
+
+                $(".myCharacter").on("click", function () {
+                    var characterNum = parseInt($(this).attr("data-characterValue"))
+                    total += characterNum
+                    $("#myNum").text(total)
+                    // if (total === randNum) {
+                    //     alert("win")
+                    // }
+                    // else if (total > randNum) {
+                    //     alert("lose")
+                    // }
+                    // else {
+                    //     return
+                    // }
+                })
+                // var total = 0
+                // var randNum = Math.floor(Math.random() * 100)
+                // $("#numGuess").text("Click the Characters to Match the Number : " + randNum)
+                for (var i = 0; i < 1; i++) {
+                    var myImage = $("<img>")
+                    myImage.attr("src", "./assets/images/darthmaul.jpg")
+                    myImage.attr("class", "characterSize myCharacter")
+                    myImage.attr("data-characterValue", Math.floor(Math.random() * 20))
+                    $("#character").append(myImage)
+                }
+
+                $(".myCharacter").on("click", function () {
+                    var characterNum = parseInt($(this).attr("data-characterValue"))
+                    total += characterNum
+                    $("#myNum").text(total)
+                    // if (total === randNum) {
+                    //     alert("win")
+                    // }
+                    // else if (total > randNum) {
+                    //     alert("lose")
+                    // }
+                    // else {
+                    //     return
+                    // }
+                })
+                // var total = 0
+                // var randNum = Math.floor(Math.random() * 100)
+                // $("#numGuess").text("Click the Characters to Match the Number : " + randNum)
+                for (var i = 0; i < 1; i++) {
+                    var myImage = $("<img>")
+                    myImage.attr("src", "./assets/images/kylo.jpg")
+                    myImage.attr("class", "characterSize myCharacter")
+                    myImage.attr("data-characterValue", Math.floor(Math.random() * 20))
+                    $("#character").append(myImage)
+                }
+
+                $(".myCharacter").on("click", function () {
+                    var characterNum = parseInt($(this).attr("data-characterValue"))
+                    total += characterNum
+                    $("#myNum").text(total)
+              
+                    if (total === randNum) {
+                        alert("The Force is Strong with this One")
+                    }
+                    else if (total > randNum) {
+                        alert("Do or Do Not, there is no Try!")
+                        
+                    }
+                    else {
+                        return
+                    }
+                
+                })
+
+         
+
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

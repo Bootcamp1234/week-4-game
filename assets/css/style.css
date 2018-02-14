@@ -1,0 +1,25 @@
+.container{
+    background-image: url(assets/images/background.jpg);
+}
+
+.header{
+    text-align: -webkit-center;
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.instruction{
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    color: brown;
+}
+#wellwish{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: blue;
+}
+
+.characterSize {
+    width: 250px;
+    height: 250px;
+    padding-right: 10px;
+
+}
